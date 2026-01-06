@@ -1,0 +1,4 @@
+[flavor]
+# Requires `ya pkg add ...`
+dark = "catppuccin-mocha"
+light = "catppuccin-latte"

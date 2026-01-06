@@ -1,0 +1,53 @@
+{
+  "plugins": {
+    "blink.cmp": {
+      "rev": "fa9e5fa324f8a721a562a7baeba35a0da44ec651",
+      "src": "https://github.com/Saghen/blink.cmp"
+    },
+    "catppuccin": {
+      "rev": "30fa4d122d9b22ad8b2e0ab1b533c8c26c4dde86",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "lualine": {
+      "rev": "b8c23159c0161f4b89196f74ee3a6d02cdc3a955",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "neogit": {
+      "rev": "6617978288d58eb121754b5dd890e893d9a7e8d6",
+      "src": "https://github.com/NeogitOrg/neogit"
+    },
+    "nvim": {
+      "rev": "30fa4d122d9b22ad8b2e0ab1b533c8c26c4dde86",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "nvim-lspconfig": {
+      "rev": "3e89e4973d784e1c966517e528b3a30395403fa7",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-treesitter": {
+      "rev": "9addcdd01568a7c80333d5169dea0164ede5dd3d",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter",
+      "version": "'main'"
+    },
+    "nvim-treesitter-context": {
+      "rev": "66a9b5fa9e806918b5fe3dba00c6cce7e230abd2",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter-context"
+    },
+    "nvim-web-devicons": {
+      "rev": "6e51ca170563330e063720449c21f43e27ca0bc1",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "plenary.nvim": {
+      "rev": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "telescope-file-browser.nvim": {
+      "rev": "3610dc7dc91f06aa98b11dca5cc30dfa98626b7e",
+      "src": "https://github.com/nvim-telescope/telescope-file-browser.nvim"
+    },
+    "telescope.nvim": {
+      "rev": "b4da76be54691e854d3e0e02c36b0245f945c2c7",
+      "src": "https://github.com/nvim-telescope/telescope.nvim"
+    }
+  }
+}
