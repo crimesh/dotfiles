@@ -22,9 +22,6 @@ fish: ~/.config/fish/config.fish
 all += ghostty
 ghostty: ~/.config/ghostty/config
 
-all += helix
-helix: ~/.config/helix/config.toml
-
 all += jj
 jj: ~/.config/jj/config.toml
 
@@ -37,9 +34,6 @@ yazi: ~/.config/yazi/theme.toml
 
 all += zed
 zed: ~/.config/zed/settings.json
-
-all += zellij
-zellij: ~/.config/zellij/config.kdl
 
 all += emacs
 emacs: ~/.emacs.d/init.el

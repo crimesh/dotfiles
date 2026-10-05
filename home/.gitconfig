@@ -1,6 +1,6 @@
 [user]
 	name = crimesh
-	email = crimesh@protonmail.com
+	email = me@crimesh.xyz
 [init]
 	defaultBranch = main
 [filter "lfs"]

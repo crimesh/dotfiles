@@ -1,5 +1,0 @@
-theme = "catppuccin_mocha"
-
-[editor]
-# Sync clipboard with system clipboard
-default-yank-register = "+"

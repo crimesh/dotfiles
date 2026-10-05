@@ -7,7 +7,9 @@ if test "$(uname)" = Darwin
     set -x LIBRARY_PATH "$HOMEBREW_PREFIX/lib:$LIBRARY_PATH"
 
     # llvm
-    fish_add_path "$(brew --prefix llvm)/bin"
+    fish_add_path --append "$(brew --prefix llvm)/bin"
+    set -x CC "$(brew --prefix llvm)/bin/clang"
+    set -x CXX "$(brew --prefix llvm)/bin/clang++"
     set -x CPATH "$(brew --prefix llvm)/include:$CPATH"
     set -x LIBRARY_PATH "$(brew --prefix llvm)/lib:$LIBRARY_PATH"
 
@@ -25,12 +27,18 @@ alias vi "nvim"
 alias v "nvim"
 
 # rustup
-source "$HOME/.cargo/env.fish"
+fish_add_path --prepend $HOME/.cargo/bin
+
+# go
+fish_add_path "$HOME/go/bin"
 
 # ghcup
 set GHCUP_INSTALL_BASE_PREFIX $HOME
 fish_add_path "$HOME/.cabal/bin"
 fish_add_path "$HOME/.ghcup/bin"
+
+# kubectl
+alias k "kubectl"
 
 # starship
 starship init fish | source
@@ -42,12 +50,8 @@ atuin init fish --disable-up-arrow | source
 alias sh "osh"
 alias bash "osh"
 
-# zoxide
-zoxide init fish | source
-alias c "z"
-
 # eza
-alias l "eza -l -a -h --git --hyperlink"
+alias l "eza -l -a -h --git"
 
 # bat
 set -x BAT_THEME "ansi"

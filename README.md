@@ -9,12 +9,10 @@ The [`Makefile`](Makefile) should explain itself and is easy to adjust.
 Contains configuration for:
 - `fish`
 - `ghostty`
-- `helix`
 - `jj`
 - `nvim`
 - `yazi`
 - `zed`
-- `zellij`
 - `emacs`
 - `git`
 
@@ -26,11 +24,12 @@ The `fish` config also contains configuration for:
   - `orbstack`
 - `neovim`
 - `rustup`
+- `go`
 - `ghcup`
+- `kubectl`
 - `starship`
 - `atuin`
 - `osh`
-- `zoxide`
 - `eza`
 - `bat`
 - `yazi`
