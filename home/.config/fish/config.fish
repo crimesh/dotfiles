@@ -18,6 +18,15 @@ if test "$(uname)" = Darwin
 
     # orbstack
     fish_add_path "$HOME/.orbstack/bin"
+
+    # osh
+    alias sh "osh"
+    alias bash "osh"
+
+    # bat
+    set -x BAT_THEME "ansi"
+    alias cat "bat --paging=never"
+    alias b "bat"
 end
 
 # neovim
@@ -46,17 +55,8 @@ starship init fish | source
 # atuin
 atuin init fish --disable-up-arrow | source
 
-# osh
-alias sh "osh"
-alias bash "osh"
-
 # eza
 alias l "eza -l -a -h --git"
-
-# bat
-set -x BAT_THEME "ansi"
-alias cat "bat --paging=never"
-alias b "bat"
 
 # yazi
 function y

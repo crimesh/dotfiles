@@ -7,6 +7,7 @@ This requires both GNU `make` and GNU `ln`.
 The [`Makefile`](Makefile) should explain itself and is easy to adjust.
 
 Contains configuration for:
+
 - `fish`
 - `ghostty`
 - `jj`
@@ -17,11 +18,14 @@ Contains configuration for:
 - `git`
 
 The `fish` config also contains configuration for:
+
 - macos only:
   - `homebrew`
   - `llvm`
   - `gnu coreutils`
   - `orbstack`
+  - `osh`
+  - `bat`
 - `neovim`
 - `rustup`
 - `go`
@@ -29,14 +33,13 @@ The `fish` config also contains configuration for:
 - `kubectl`
 - `starship`
 - `atuin`
-- `osh`
 - `eza`
-- `bat`
 - `yazi`
 
 ## Getting Started
 
 Just run:
+
 ```bash
 make
 ```
