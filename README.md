@@ -26,6 +26,7 @@ The `fish` config also contains configuration for:
   - `orbstack`
   - `osh`
   - `bat`
+- `ghostty`
 - `neovim`
 - `rustup`
 - `go`

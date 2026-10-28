@@ -3,15 +3,15 @@ fish_add_path "$HOME/.local/bin"
 if test "$(uname)" = Darwin
     # homebrew
     eval "$(/opt/homebrew/bin/brew shellenv)"
-    set -x CPATH "$HOMEBREW_PREFIX/include:$CPATH"
-    set -x LIBRARY_PATH "$HOMEBREW_PREFIX/lib:$LIBRARY_PATH"
+    export CPATH="$HOMEBREW_PREFIX/include:$CPATH"
+    export LIBRARY_PATH="$HOMEBREW_PREFIX/lib:$LIBRARY_PATH"
 
     # llvm
     fish_add_path --append "$(brew --prefix llvm)/bin"
-    set -x CC "$(brew --prefix llvm)/bin/clang"
-    set -x CXX "$(brew --prefix llvm)/bin/clang++"
-    set -x CPATH "$(brew --prefix llvm)/include:$CPATH"
-    set -x LIBRARY_PATH "$(brew --prefix llvm)/lib:$LIBRARY_PATH"
+    export CC="$(brew --prefix llvm)/bin/clang"
+    export CXX="$(brew --prefix llvm)/bin/clang++"
+    export CPATH="$(brew --prefix llvm)/include:$CPATH"
+    export LIBRARY_PATH="$(brew --prefix llvm)/lib:$LIBRARY_PATH"
 
     # gnu coreutils
     fish_add_path "$(brew --prefix coreutils)/libexec/gnubin"
@@ -24,13 +24,19 @@ if test "$(uname)" = Darwin
     alias bash "osh"
 
     # bat
-    set -x BAT_THEME "ansi"
+    export BAT_THEME="ansi"
     alias cat "bat --paging=never"
     alias b "bat"
 end
 
+# ghostty ssh
+alias ssh "ghostty +ssh --"
+
+# incus
+export INCUS_CONF="$HOME/.config/incus"
+
 # neovim
-set -x EDITOR "nvim"
+export EDITOR="nvim"
 alias vim "nvim"
 alias vi "nvim"
 alias v "nvim"
